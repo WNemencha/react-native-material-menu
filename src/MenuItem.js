@@ -61,7 +61,8 @@ function MenuItem({
 MenuItem.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.func
+    PropTypes.func,
+    PropTypes.array,
   ]).isRequired,
   disabled: PropTypes.bool,
   disabledTextColor: PropTypes.string,

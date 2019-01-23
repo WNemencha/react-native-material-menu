@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, TouchableNativeFeedback, TouchableHighlight, Platform } from 'react-native';
+import { StyleSheet, Text, View, TouchableNativeFeedback, TouchableHighlight, Platform } from 'react-native';
 
 function MenuItem({
   children,
@@ -11,8 +11,10 @@ function MenuItem({
   style,
   textStyle,
   underlayColor,
+  width,
   ...props
 }) {
+
   const Touchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback
